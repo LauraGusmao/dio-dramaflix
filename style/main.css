@@ -1,0 +1,140 @@
+:root {
+  --red: #E52013;
+  --black: #141414;
+  --grey: #757575;
+  --white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin-left: 30px;
+}
+
+/* header */
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-left .icon {
+  display: none;
+}
+
+.header-left img {
+  margin-left: -8px;
+}
+
+.header-links {
+  margin-left: 40px;
+}
+
+.header-icons {
+  margin-right: 30px;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: var(--white);
+  margin-right: 10px;
+}
+
+.header-links a:hover {
+  color: var(--grey);
+}
+
+.header-icons i {
+  margin: 0 13px;
+}
+
+/* hero */
+.hero {
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/vincenzo-hero.jpeg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 16px;
+  height: 550px;
+}
+
+.hero .container {
+  width: 40%;
+}
+
+.hero-title {
+  margin-top: 100px;
+  font-size: 40px;
+}
+
+.hero-overview {
+  margin: 10px 0 60px;
+}
+
+.hero-button {
+  background-color: rgba(255, 255, 255, .50);
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.hero-button:hover {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.hero-button a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.hero-button i {
+  margin-right: 6px;
+}
+
+/* films selection */
+.section-title {
+  margin: 10px 30px;
+}
+
+.item img:hover {
+  opacity: 0.5;
+}
+
+/* footer */
+footer {
+  margin-top: 15px;
+  width: 100%;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  background-color: var(--black);
+  color: var(--grey);
+}
+
+footer a {
+  color: var(--white);
+}
